@@ -11,10 +11,17 @@
 
 #### Run image in a named container and expose port 8080 from docker container to port 8080
 
-  ```  $ ```   ```docker run -d -p 8080:8080 --name EXAMPLE_IMAGE EXAMPLE_IMAGE_NAME```
+  ```  $ ```   ```docker run -d -p 8080:8080 --name EXAMPLE_CONTAINER_NAME EXAMPLE_IMAGE_NAME```
 
 #### Run image on a container, expose port 8080 and mount volume on target current location
   ```  $ ```   ```docker run -d -p 8080:8080 -v /.:/var/www/my-app EXAMPLE_IMAGE_NAME```
+
+#### Stop container
+  ```  $```   ``` docker stop EXAMPLE_CONTAINER_NAME```
+
+#### Start previously stopped container
+
+  ```  $```   ``` docker start EXAMPLE_CONTAINER_NAME```
 
 #### List current active images
 
